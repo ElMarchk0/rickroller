@@ -1,0 +1,434 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+/* Code from Criteria */
+.nav {    
+  background-color:antiquewhite;
+  height: 70px;
+  line-height: 5px; 
+  opacity: 0.75;
+  position: fixed;
+  text-align: right;  
+  width: 100%;
+  z-index: 2;
+}
+
+#navheader {
+  color: #0E2159;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 5px;
+  margin: 25px 0 0 10px;
+  text-align: left;
+  text-shadow: 3px 2px 2px #EAEAEB;
+}
+
+.menu {  
+  color: #0E2159;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0 20px;
+  z-index: 2;
+}
+  
+.menu a {  
+  clear: right;  
+  color: gray;  
+  line-height: 20px;  
+  margin: 0 10px;  
+  text-decoration: none;  
+  z-index: 2;
+  color: #0E2159;
+}
+  
+label {  
+  display: none;  
+  float: right;  
+  font-size: 26px; 
+  margin: 0 40px 0 0;  
+  width: 26px;  
+}
+  
+#toggle {  
+  display: none;
+} 
+
+/* Header */
+
+#main-header {
+  color: #0E2159;
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 5em;
+  text-align: center;
+  text-shadow: 3px 2px 2px #EAEAEB;
+}
+  
+/* Video */
+#myVideo {  
+  bottom: 0;
+  height: 160vh; /* Video is set to 160vh to compensate for 4:3 aspect ratio; both sections that feature the video are 100vh */
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+section#video{
+  height: 100vh;
+  margin-bottom: 0;
+  overflow: auto;
+  padding: 0;
+  padding-bottom: 0;
+}
+
+
+/* Boxes */
+section#boxes {  
+  background-color:rgb(1, 48, 70);
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  margin-top: 20px;  
+}
+
+.box {
+  background-color:antiquewhite;
+  font-size: 20px;
+  margin-top: 10em;
+  margin: 5em 2em 10em 2em;
+  opacity: 0.75;
+  padding: 1em;
+  text-align: center;
+  width: 35%;
+}
+
+/* Information Section */
+section#information {
+  background-image: url('../images/background1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+}
+
+#rickroll-info {
+  background-color:antiquewhite;
+  font-size: 20px;
+  margin: 10em 40em 22.5em 5em;
+  opacity: 0.75;
+  padding: 2em;
+  text-align: center;
+  width: 50%;
+}
+
+#rickroll-info p{
+  padding: -2em;
+}
+
+/* Sign-up */
+section#sign-up{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+}
+
+.sign-up{  
+  align-items: center;
+  font-size: 20px;  
+  margin: auto;
+  margin-top: 10em;
+  padding: 2em;
+  position: absolute;
+  text-align: center;  
+}
+
+#Video-form {   
+  height: 360px;
+  object-fit: cover;
+  width: 480px;    
+} 
+
+#form-wrapper {
+  backdrop-filter: blur(20px);
+  height: 380px;
+  margin-top: -400px;
+  width: 480px;  
+}
+
+#inner-form{
+  margin-top: 1em;
+}
+
+#form{    
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  margin: 2em 4em 5em 4em;
+  padding: 1em;
+  width: auto;
+}
+
+#inner-form h3{
+  color: antiquewhite;
+  font-weight: bold;
+  padding: 2em;
+  text-align: center;
+}
+
+
+#btn{  
+  background-color: #008CBA; 
+  border: none;
+  color: white;
+  font-size: 12px;
+  margin: 2px 2px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+#btn:hover {
+  background-color: #0E2159;
+}
+
+footer {
+  background-color: antiquewhite;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.75;
+  height: 1.5em;
+  text-align: center;
+  color: #0E2159;
+}
+
+@media only screen and (max-width: 500px) {
+
+  /* Menu */
+  
+  label{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  .menu {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .menu a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  margin: 2em 4em 5em 4em;
+  padding: 1em;
+  width: auto;
+}
+
+#inner-form h3{
+  color: antiquewhite;
+  font-weight: bold;
+  padding: 2em;
+  text-align: center;
+}
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  #navheader {
+    font-size: 30px;    
+    text-align: center;
+    text-shadow: 3px 2px 2px #EAEAEB;
+  }
+
+  .nav {    
+    height: auto;      
+  }
+
+  /* Video */
+  #myVideo {  
+    height: 100%;
+    left: 0;
+    object-fit: cover;    
+    top: 0;
+    width: 100%;
+  }
+
+  /* Headline */
+  #main-header{
+    font-size: 60px;    
+  }  
+
+  /* Boxes */
+  section#boxes {    
+    background-color:rgb(1, 48, 70);  
+    height: auto;   
+  }
+
+  section#boxes .box {
+    background-color:antiquewhite;
+    font-size: 20px;
+    margin: 1em 2em 1em 2em;
+    opacity: 0.75;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+  }
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* info */
+  #rickroll-info {
+    background-color:antiquewhite;
+    font-size: 20px;
+    margin: 5em 3em 5em 3em;
+    opacity: 0.75;    
+    text-align: center;
+    width: auto;
+  }
+
+  /* Sign-up */
+  #sign-up{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  #Video-form {   
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
+    z-index: -2;    
+  } 
+
+  #form-wrapper {
+    backdrop-filter: blur(20px);
+    height: 380px;
+    margin-top: -400px; /* Only way I could get this to work */
+    width: 400px;
+    z-index: -2;
+  }
+
+
+@media only screen and (max-width: 768px) {
+  html, body {
+    margin: 0;    
+  }
+
+  label{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 40px;
+  }
+  .menu {
+    display: none;
+    text-align: right;
+    margin-top: 15px;
+  }
+
+  .menu a {
+    background-color:antiquewhite;
+    border-bottom: 1px solid #EAEAEB;
+    display: block;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  #navheader {
+    font-size: 30px;    
+    text-align: left;
+    text-shadow: 3px 2px 2px #EAEAEB;
+  }
+
+  .nav {    
+    height: auto;
+    width: 100vw;      
+  }
+
+  /* Video */
+  section#video {
+    width: 100%;
+  }
+  #myVideo {  
+    height: 100%;
+    left: 0;
+    object-fit: cover;    
+    top: 0;
+    
+  }
+
+  /* Headline */
+  #main-header{
+    font-size: 60px;    
+  } 
+
+  /* Three boxes
+   */
+  section#boxes {    
+    background-color:rgb(1, 48, 70);  
+    height: auto;   
+  }
+
+  section#boxes .box {
+    background-color:antiquewhite;
+    font-size: 20px;
+    margin: 1em 2em 1em 2em;
+    opacity: 0.75;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+  }
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* info */
+  #rickroll-info {
+    background-color:antiquewhite;
+    font-size: 20px;
+    margin: 5em 3em 5em 3em;
+    opacity: 0.75;    
+    text-align: center;
+    width: auto;
+  }
+  
+}
+
